@@ -34,7 +34,7 @@ vnoremap <C-P> :call PhpDocRange()<CR>
 
 map <D-y> "+yy
 
-"Bubble multiple lines
+"Bubble multiple lines - cool
 vmap <C-Up> xkPz[V`]
 vmap <C-Down> xp`[V`]
 
