@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/korpz/Downloads/sample'
+let g:netrw_dirhist_2='/home/korpz/Downloads/sample/includes'
+let g:netrw_dirhist_3='/home/korpz/.vim/snippets'
+let g:netrw_dirhist_4='/opt/lampp/htdocs/kpthought'
+let g:netrw_dirhist_5='/home/korpz/.history'
