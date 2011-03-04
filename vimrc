@@ -10,7 +10,6 @@ set virtualedit=all
 set nocompatible
 set autoindent
 set smartindent
-set cursorcolumn
 
 "TLIST
 "let Tlist_Auto_Open = 1
