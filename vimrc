@@ -10,10 +10,11 @@ set virtualedit=all
 set nocompatible
 set autoindent
 set smartindent
+set cursorcolumn
 
 "TLIST
 "let Tlist_Auto_Open = 1
-"let Tlist_Auto_Update = 1
+"let Tlist_Autestto_Update = 1
 "let Tlist_GainFocus_On_ToggleOpen = 1
 
 colorscheme vividchalk
@@ -68,3 +69,8 @@ highlight SpecialKey guifg=#ffffff
 "php cheat for tags
 autocmd FileType php let b:surround_45 = "<?php \r ?>"
 let g:user_zen_leader_key= '<c-a>'
+
+"show cursor lines"
+"hi CursorLine   cterm=NONE ctermbg=darkgreen ctermfg=white guibg=darkred guifg=white
+"hi CursorColumn cterm=NONE ctermbg=darkgreen ctermfg=white guibg=darkred guifg=white
+nnoremap ,z :set cursorline! cursorcolumn!<CR>
