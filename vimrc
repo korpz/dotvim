@@ -1,6 +1,6 @@
 set tabstop=4
 set shiftwidth=4
-set showmatch
+"set showmatch
 set guioptions-=T
 set vb t_vb=
 set ruler
@@ -10,6 +10,11 @@ set virtualedit=all
 set nocompatible
 set autoindent
 set smartindent
+set smartcase
+set ignorecase
+set hlsearch
+
+filetype plugin on
 
 "TLIST
 "let Tlist_Auto_Open = 1
@@ -18,7 +23,6 @@ set smartindent
 
 colorscheme vividchalk
 set background=dark
-set hlsearch
 syntax on
 "let g:molokai_original=1
 
