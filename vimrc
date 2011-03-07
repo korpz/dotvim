@@ -55,6 +55,13 @@ nmap <C-V> "+gP
 imap <C-V> <ESC><C-V>i
 vmap <C-C> "+y
 
+"FATBEEHIVE bk_debug function
+vmap ,ds yo<ESC>ibk_debug("<ESC>hhpA;<ESC>
+vmap ,d yo<ESC>ibk_debug(<ESC>hpA;<ESC>
+
+vmap ,dse yo<ESC>ibk_debug("<ESC>hhpA;<ESC>hhi", "emile@fatbeehive.com
+vmap ,de yo<ESC>ibk_debug(<ESC>hpA;<ESC>hhi, "emile@fatbeehive.com
+
 "switching between windows
 map <C-h> <C-w>h
 map <C-j> <C-w>j
