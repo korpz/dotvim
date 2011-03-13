@@ -1,38 +1,3 @@
-#Fatbeehive Snippets
-#DB
-snippet db getVar
-	$col = $db->getvar('select ${1:column} from ${2:table} where ${3} = ${4}');
-	if($col != '')
-	{
-		echo $col;
-	}
-snippet db getRow
-	$results = $db->getrow('select ${1:column} from ${2:table} where ${3} = ${4}');
-	if(is_array($results))
-	{
-		foreach($results as $result)
-		{
-		  echo $result->${5};	
-		}
-	}
-snippet db getResults
-	$results = $db->getresults('select ${1:column} from ${2:table} where ${3} = ${4}');
-	if(is_array($results))
-	{
-		foreach($results as $result)
-		{
-		  echo $result->${5};	
-		}
-	}
-#IMG
-snippet img toWidth                                                                                                                     
-	$image= ${2:$row->image} ? "<img src='/img.php?f=$${2}&amp;p=toWidth&amp;o=jpg&amp;a[width]=${3}' />" : "";    
-snippet img toHeight                                                                                                                     
-	$image= ${2:$row->image} ? "<img src='/img.php?f=$${2}&amp;p=toHeight&amp;o=jpg&amp;a[height]=${3}' />" : "";                                       
-snippet img cropTo                                                                                                                    
-	$image= ${2:$row->image} ? "<img src='/img.php?f=$${2}&amp;p=cropTo&amp;o=jpg&amp;a[height]=${3};a[width]=${4}' />" : "";                            
-snippet img shToWidth                                                                                                                                                   
-	$image= ${2:$row->image} ? "<img src='/img.php?f=$${2}&amp;p=shrinkToWidth&amp;o=jpg&amp;[width]=${2}' />" : "";
 snippet php
 	<?php
 	${1}

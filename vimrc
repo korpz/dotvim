@@ -62,6 +62,8 @@ vmap ,d yo<ESC>ibk_debug(<ESC>hpA;<ESC>
 vmap ,dse yo<ESC>ibk_debug("<ESC>hhpA;<ESC>hhi", "emile@fatbeehive.com
 vmap ,de yo<ESC>ibk_debug(<ESC>hpA;<ESC>hhi, "emile@fatbeehive.com
 
+nmap ,vs v2wh
+
 "switching between windows
 map <C-h> <C-w>h
 map <C-j> <C-w>j
@@ -84,3 +86,19 @@ let g:user_zen_leader_key= '<c-a>'
 "hi CursorLine   cterm=NONE ctermbg=darkgreen ctermfg=white guibg=darkred guifg=white
 "hi CursorColumn cterm=NONE ctermbg=darkgreen ctermfg=white guibg=darkred guifg=white
 nnoremap ,z :set cursorline! cursorcolumn!<CR>
+
+function! WordFrequency() range
+  let all = split(join(getline(a:firstline, a:lastline)), '\A\+')
+  let frequencies = {}
+  for word in all
+    let frequencies[word] = get(frequencies, word, 0) + 1
+  endfor
+  new
+  setlocal buftype=nofile bufhidden=hide noswapfile tabstop=20
+  for [key,value] in items(frequencies)
+    call append('$', key."\t".value)
+  endfor
+  sort i
+endfunction
+command! -range=% WordFrequency <line1>,<line2>call WordFrequency()
+
