@@ -56,12 +56,20 @@ imap <D-V> <ESC><C-V>i
 vmap <D-C> "+y
 
 "FATBEEHIVE bk_debug function
-vmap ,ds yo<ESC>ibk_debug("<ESC>hhpA;<ESC>
-vmap ,d yo<ESC>ibk_debug(<ESC>hpA;<ESC>
+vmap ,bs yo<ESC>ibk_debug("<ESC>hhpA;<ESC>
+vmap ,b yo<ESC>ibk_debug(<ESC>hpA;<ESC>
+vmap ,bse yo<ESC>ibk_debug("<ESC>hhpA;<ESC>hhi", "emile@fatbeehive.com
+vmap ,be yo<ESC>ibk_debug(<ESC>hpA;<ESC>hhi, "emile@fatbeehive.com
 
-vmap ,dse yo<ESC>ibk_debug("<ESC>hhpA;<ESC>hhi", "emile@fatbeehive.com
-vmap ,de yo<ESC>ibk_debug(<ESC>hpA;<ESC>hhi, "emile@fatbeehive.com
+"echo function
+vmap ,es yo<ESC>iecho<SPACE>"<ESC>hpA;<ESC>
+vmap ,e yo<ESC>iecho<SPACE><ESC>pA;<ESC>
 
+"die function
+vmap ,d yo<ESC>idie(<ESC>hpA;<ESC>
+nmap ,d yo<ESC>idie(<ESC>hpA;<ESC>
+
+"select a variable
 nmap ,vs v2wh
 
 "switching between windows
@@ -101,4 +109,3 @@ function! WordFrequency() range
   sort i
 endfunction
 command! -range=% WordFrequency <line1>,<line2>call WordFrequency()
-
