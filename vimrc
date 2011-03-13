@@ -13,6 +13,8 @@ set smartindent
 set smartcase
 set ignorecase
 set hlsearch
+set textwidth=150
+set wrapmargin=150
 
 filetype plugin on
 
@@ -36,8 +38,6 @@ inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
 nnoremap <C-P> :call PhpDocSingle()<CR>
 vnoremap <C-P> :call PhpDocRange()<CR> 
 
-map <D-y> "+yy
-
 "Bubble multiple lines - cool
 vmap <C-Up> xkPz[V`]
 vmap <C-Down> xp`[V`]
@@ -51,9 +51,9 @@ if has("autocmd")
 endif
 
 "paste from the outside
-nmap <C-V> "+gP
-imap <C-V> <ESC><C-V>i
-vmap <C-C> "+y
+nmap <D-V> "+gP
+imap <D-V> <ESC><C-V>i
+vmap <D-C> "+y
 
 "FATBEEHIVE bk_debug function
 vmap ,ds yo<ESC>ibk_debug("<ESC>hhpA;<ESC>
