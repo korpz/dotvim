@@ -1,3 +1,8 @@
+"EMILES VIMRC
+"pathogen has to be called before filetype detection
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 set tabstop=4
 set shiftwidth=4
 "set showmatch
@@ -17,6 +22,8 @@ set textwidth=150
 set wrapmargin=150
 
 filetype plugin on
+
+let g:cssColorVimDoNotMessMyUpdatetime = 1
 
 "TLIST
 "let Tlist_Auto_Open = 1
@@ -50,10 +57,7 @@ if has("autocmd")
  autocmd bufwritepost .vimrc source $MYVIMRC
 endif
 
-"paste from the outside
-nmap <D-V> "+gP
-imap <D-V> <ESC><C-V>i
-vmap <D-C> "+y
+nmap <SPACE> 10j
 
 "FATBEEHIVE bk_debug function
 vmap ,bs yo<ESC>ibk_debug("<ESC>hhpA;<ESC>
@@ -71,6 +75,18 @@ nmap ,d yo<ESC>idie(<ESC>hpA;<ESC>
 
 "select a variable
 nmap ,vs v2wh
+
+"save
+nmap ,w :w!<CR>
+
+"copy to system clipboard
+nmap ,y "+y
+
+"paste from system clipboard
+nmap ,p "+p
+
+"quit
+nmap ,q :q!<CR>
 
 "switching between windows
 map <C-h> <C-w>h
