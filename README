@@ -12,4 +12,4 @@ Switch to the `~/.vim` directory, and fetch submodules:
     git submodule init
     git submodule update
 
-To add new plugins as submodules, add them to array in update_bundles.rb
+To add new plugins as submodules, add them to array in update_bundles.rb, and run it
