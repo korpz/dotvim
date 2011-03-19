@@ -57,7 +57,6 @@ if has("autocmd")
  autocmd bufwritepost .vimrc source $MYVIMRC
 endif
 
-nmap <SPACE> 10j
 
 "FATBEEHIVE bk_debug function
 vmap ,bs yo<ESC>ibk_debug("<ESC>hhpA;<ESC>
@@ -87,6 +86,9 @@ nmap ,p "+p
 
 "quit
 nmap ,q :q!<CR>
+
+"quit
+nmap <SPACE> 10j
 
 "switching between windows
 map <C-h> <C-w>h
