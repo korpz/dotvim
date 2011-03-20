@@ -57,7 +57,6 @@ if has("autocmd")
  autocmd bufwritepost .vimrc source $MYVIMRC
 endif
 
-
 "FATBEEHIVE bk_debug function
 vmap ,bs yo<ESC>ibk_debug("<ESC>hhpA;<ESC>
 vmap ,b yo<ESC>ibk_debug(<ESC>hpA;<ESC>
@@ -71,6 +70,9 @@ vmap ,e yo<ESC>iecho<SPACE><ESC>pA;<ESC>
 "die function
 vmap ,d yo<ESC>idie(<ESC>hpA;<ESC>
 nmap ,d yo<ESC>idie(<ESC>hpA;<ESC>
+
+" Shortcut to rapidly toggle `set list`
+nmap ,l :set list!<CR>
 
 "select a variable
 nmap ,vs v2wh
@@ -87,18 +89,12 @@ nmap ,p "+p
 "quit
 nmap ,q :q!<CR>
 
-"quit
+"scroll down
 nmap <SPACE> 10j
  
-" Shortcut to rapidly toggle `set list`
-nmap ,l :set list!<CR>
  
 " Use the same symbols as TextMate for tabstops and EOLs
-set listchars=tab:▸\ ,eol:¬
-
-"Invisible character colors
-highlight NonText guifg=#4a4a59
-highlight SpecialKey guifg=#4a4a59
+set listchars=tab:▸\ ,eol:❤
 
 "switching between windows
 map <C-h> <C-w>h
