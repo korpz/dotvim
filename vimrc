@@ -20,10 +20,9 @@ set ignorecase
 set hlsearch
 set textwidth=150
 set wrapmargin=150
+set history=1000
 
 filetype plugin on
-
-let g:cssColorVimDoNotMessMyUpdatetime = 1
 
 "TLIST
 "let Tlist_Auto_Open = 1
@@ -63,13 +62,17 @@ vmap ,b yo<ESC>ibk_debug(<ESC>hpA;<ESC>
 vmap ,bse yo<ESC>ibk_debug("<ESC>hhpA;<ESC>hhi", "emile@fatbeehive.com
 vmap ,be yo<ESC>ibk_debug(<ESC>hpA;<ESC>hhi, "emile@fatbeehive.com
 
-"echo function
-vmap ,es yo<ESC>iecho<SPACE>"<ESC>hpA;<ESC>
-vmap ,e yo<ESC>iecho<SPACE><ESC>pA;<ESC>
-
 "die function
 vmap ,d yo<ESC>idie(<ESC>hpA;<ESC>
 nmap ,d yo<ESC>idie(<ESC>hpA;<ESC>
+
+"echo function
+vmap ,es yo<ESC>iecho<SPACE>"<ESC>hpA;<ESC>
+vmap ,e yo<ESC>iecho<SPACE><ESC>pA;<ESC>
+"
+" Folding and unfolding
+map ,f :set foldmethod=indent<cr>zM<cr>
+map ,F :set foldmethod=manual<cr>zR<cr>
 
 " Shortcut to rapidly toggle `set list`
 nmap ,l :set list!<CR>
@@ -83,11 +86,17 @@ nmap ,w :w!<CR>
 "copy to system clipboard
 nmap ,y "+y
 
+"set line numbers
+nmap ,n :set number!<CR>
+
 "paste from system clipboard
 nmap ,p "+p
 
 "quit
 nmap ,q :q!<CR>
+
+"source vimrc 
+nmap ,s :source ~/.vimrc<CR>
 
 "scroll down
 nmap <SPACE> 10j
@@ -101,14 +110,6 @@ map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
-
-" Folding and unfolding
-map ,f :set foldmethod=indent<cr>zM<cr>
-map ,F :set foldmethod=manual<cr>zR<cr>
-
-"Invisible character colors
-highlight NonText guifg=#ffffff
-highlight SpecialKey guifg=#ffffff
 
 "php cheat for tags
 autocmd FileType php let b:surround_45 = "<?php \r ?>"

@@ -13,4 +13,12 @@ Switch to the `~/.vim` directory, and fetch submodules:
     git submodule update
 
 To add new plugins as submodules, add them to array in update_bundles.rb, and run it
-bla
+
+OR
+
+cd ~/.vim
+mkdir ~/.vim/bundle
+git submodule add http://github.com/tpope/vim-fugitive.git bundle/fugitive
+git add .
+git commit -m "Install new bundle"
+

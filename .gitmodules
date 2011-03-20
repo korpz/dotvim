@@ -4,3 +4,6 @@
 [submodule "bundle/css-color.vim"]
 	path = bundle/css-color.vim
 	url = https://github.com/skammer/vim-css-color.git
+[submodule "bundle/vimpress"]
+	path = bundle/vimpress
+	url = https://github.com/PotHix/Vimpress.git

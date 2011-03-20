@@ -13,7 +13,7 @@ hi clear
 if exists("syntax_on")
     syntax reset
 endif
-let g:colors_name="aqua"
+let colors_name="aqua"
 
 hi Normal				guibg=steelblue guifg=linen
 hi Cursor				guibg=lightblue3 guifg=black gui=bold
