@@ -89,6 +89,16 @@ nmap ,q :q!<CR>
 
 "quit
 nmap <SPACE> 10j
+ 
+" Shortcut to rapidly toggle `set list`
+nmap ,l :set list!<CR>
+ 
+" Use the same symbols as TextMate for tabstops and EOLs
+set listchars=tab:▸\ ,eol:¬
+
+"Invisible character colors
+highlight NonText guifg=#4a4a59
+highlight SpecialKey guifg=#4a4a59
 
 "switching between windows
 map <C-h> <C-w>h
