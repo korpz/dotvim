@@ -22,6 +22,7 @@ set textwidth=150
 set wrapmargin=150
 set history=1000
 set list
+let mapleader = ","
 
 filetype plugin on
 
@@ -63,6 +64,9 @@ vmap ,bs yo<ESC>ibk_debug("<ESC>hhpA;<ESC>
 vmap ,b yo<ESC>ibk_debug(<ESC>hpA;<ESC>
 vmap ,bse yo<ESC>ibk_debug("<ESC>hhpA;<ESC>hhi", "emile@fatbeehive.com
 vmap ,be yo<ESC>ibk_debug(<ESC>hpA;<ESC>hhi, "emile@fatbeehive.com
+
+"die function
+nmap ,c<SPACE> :NERDComToggleComment<CR>
 
 "die function
 vmap ,d yo<ESC>idie(<ESC>hpA;<ESC>
