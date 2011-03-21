@@ -34,6 +34,7 @@ set background=dark
 syntax on
 "let g:molokai_original=1
 
+
 "Bubble single lines
 nmap <C-UP> ddkP
 nmap <C-Down> ddp
