@@ -21,6 +21,7 @@ set hlsearch
 set textwidth=150
 set wrapmargin=150
 set history=1000
+set list
 
 filetype plugin on
 
@@ -86,12 +87,17 @@ nmap ,w :w!<CR>
 
 "copy to system clipboard
 nmap ,y "+y
+vmap ,y "+y
 
 "set line numbers
 nmap ,n :set number!<CR>
 
+"set line numbers
+nmap ,nt :NERDTreeToggle<CR>
+
 "paste from system clipboard
 nmap ,p "+p
+vmap ,p "+p
 
 "quit
 nmap ,q :q!<CR>
