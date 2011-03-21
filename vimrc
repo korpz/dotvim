@@ -59,6 +59,9 @@ if has("autocmd")
  autocmd bufwritepost .vimrc source $MYVIMRC
 endif
 
+"Source config for wordpress
+source ~/my_vimpress.vimrc
+
 "FATBEEHIVE bk_debug function
 vmap ,bs yo<ESC>ibk_debug("<ESC>hhpA;<ESC>
 vmap ,b yo<ESC>ibk_debug(<ESC>hpA;<ESC>

@@ -7,3 +7,9 @@
 [submodule "bundle/vimpress"]
 	path = bundle/vimpress
 	url = https://github.com/PotHix/Vimpress.git
+[submodule "bundle/vimprepress"]
+	path = bundle/vimprepress
+	url = https://github.com/vim-scripts/VimRepress.git
+[submodule "bundle/vimrepress"]
+	path = bundle/vimrepress
+	url = https://github.com/vim-scripts/VimRepress.git
