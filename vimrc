@@ -112,12 +112,19 @@ nmap ,q :q!<CR>
 "source vimrc 
 nmap ,s :source ~/.vimrc<CR>
 
+"Taglist toggle
+nmap ,t :TaglistToggle<CR>
+
 "scroll down
 nmap <SPACE> 10j
  
  
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:❤
+"
+"Invisible character colors
+highlight NonText guifg=#4a4a59
+highlight SpecialKey guifg=#4a4a59
 
 "switching between windows
 map <C-h> <C-w>h
