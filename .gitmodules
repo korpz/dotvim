@@ -13,3 +13,12 @@
 [submodule "bundle/vimrepress"]
 	path = bundle/vimrepress
 	url = https://github.com/vim-scripts/VimRepress.git
+[submodule "FuzzyFinder"]
+	path = FuzzyFinder
+	url = https://github.com/vim-scripts/FuzzyFinder.git
+[submodule "bundle/fuzzyFinder"]
+	path = bundle/fuzzyFinder
+	url = https://github.com/vim-scripts/FuzzyFinder.git
+[submodule "bundle/l9"]
+	path = bundle/l9
+	url = https://github.com/vim-scripts/L9.git
