@@ -87,6 +87,9 @@ map ,F :set foldmethod=manual<cr>zR<cr>
 nmap ,l :set list!<CR>
 
 "select a variable
+nmap ,ss :set spell!<cr>
+
+"select a variable
 nmap ,vs v2wh
 
 "save

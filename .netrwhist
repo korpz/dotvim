@@ -1,11 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/home/emile/.vim/.git'
-let g:netrw_dirhist_2='/home/emile/.vim/bundle/snipmate.vim'
-let g:netrw_dirhist_3='/home/emile/.ssh'
-let g:netrw_dirhist_4='/home/emile/remoteserv/BRIX/server/www/archbishop/www/admin/tags'
-let g:netrw_dirhist_5='/home/emile/remoteserv/BRIX/server/www/archbishop/www/admin/articles'
-let g:netrw_dirhist_6='/home/emile/remoteserv/MICKO/server/www/ilsi/www/css'
-let g:netrw_dirhist_7='/home/emile/remoteserv/BRIX/server/www/archbishop/www/admin/articles'
-let g:netrw_dirhist_8='/home/emile/Documents'
-let g:netrw_dirhist_9='/home/emile/.googlecl'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/emile/notes'
+let g:netrw_dirhist_2='/home/emile/remoteserv/BRIX/server/www/archbishop/www/admin'
+let g:netrw_dirhist_3='/home/emile/remoteserv/BRIX/server/www/archbishop/www/admin/articles'
