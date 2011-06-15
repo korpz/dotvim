@@ -22,6 +22,7 @@ set textwidth=150
 set wrapmargin=150
 set history=1000
 set list
+set noswapfile
 let mapleader = ","
 
 filetype plugin on
@@ -68,7 +69,7 @@ vmap ,b yo<ESC>ibk_debug(<ESC>hpA;<ESC>
 vmap ,bse yo<ESC>ibk_debug("<ESC>hhpA;<ESC>hhi", "emile@fatbeehive.com
 vmap ,be yo<ESC>ibk_debug(<ESC>hpA;<ESC>hhi, "emile@fatbeehive.com
 
-"die function
+"nerd tree toggle
 nmap ,c<SPACE> :NERDComToggleComment<CR>
 
 "die function
@@ -80,11 +81,14 @@ vmap ,es yo<ESC>iecho<SPACE>"<ESC>hpA;<ESC>
 vmap ,e yo<ESC>iecho<SPACE><ESC>pA;<ESC>
 "
 " Folding and unfolding
-map ,f :set foldmethod=indent<cr>zM<cr>
-map ,F :set foldmethod=manual<cr>zR<cr>
+"map ,f :set foldmethod=indent<cr>zM<cr>
+"map ,F :set foldmethod=manual<cr>zR<cr>
 
 " Shortcut to rapidly toggle `set list`
 nmap ,l :set list!<CR>
+
+" Search forward with f key
+noremap ,f ;
 
 "select a variable
 nmap ,ss :set spell!<cr>
@@ -116,7 +120,7 @@ nmap ,q :q!<CR>
 nmap ,s :source ~/.vimrc<CR>
 
 "Taglist toggle
-nmap ,t :TaglistToggle<CR>
+nmap ,t :TlistToggle<CR>
 
 "scroll down
 nmap <SPACE> 10j
