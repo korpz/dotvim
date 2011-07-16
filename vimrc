@@ -16,6 +16,7 @@ set nocompatible
 set autoindent
 set smartindent
 set smartcase
+set autochdir
 set ignorecase
 set hlsearch
 set textwidth=150
@@ -24,7 +25,8 @@ set history=1000
 set list
 set noswapfile
 let mapleader = ","
-
+let g:yankring_window_use_bottom = 0
+let g:yankring_window_height = 15
 filetype plugin on
 
 "TLIST
@@ -32,11 +34,10 @@ filetype plugin on
 "let Tlist_Autestto_Update = 1
 "let Tlist_GainFocus_On_ToggleOpen = 1
 
-colorscheme vividchalk
-set background=dark
+set t_Co=256
+colorscheme wombat256
 syntax on
 "let g:molokai_original=1
-
 
 "Bubble single lines
 nmap <C-UP> ddkP
@@ -68,6 +69,11 @@ vmap ,bs yo<ESC>ibk_debug("<ESC>hhpA;<ESC>
 vmap ,b yo<ESC>ibk_debug(<ESC>hpA;<ESC>
 vmap ,bse yo<ESC>ibk_debug("<ESC>hhpA;<ESC>hhi", "emile@fatbeehive.com
 vmap ,be yo<ESC>ibk_debug(<ESC>hpA;<ESC>hhi, "emile@fatbeehive.com
+
+"FATBEEHIVE bk_debug function
+nmap ,bn :BlogNew<CR>
+nmap ,bsp :BlogSave publish<CR>
+nmap ,bl :BlogList<CR>
 
 "nerd tree toggle
 nmap ,c<SPACE> :NERDComToggleComment<CR>
@@ -116,6 +122,9 @@ vmap ,p "+p
 "quit
 nmap ,q :q!<CR>
 
+"Yankring plugin
+nnoremap ,r :YRShow<CR> 
+
 "source vimrc 
 nmap ,s :source ~/.vimrc<CR>
 
@@ -162,3 +171,6 @@ function! WordFrequency() range
   sort i
 endfunction
 command! -range=% WordFrequency <line1>,<line2>call WordFrequency()
+
+"Abbreviations
+iab pnd £

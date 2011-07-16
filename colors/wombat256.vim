@@ -233,15 +233,15 @@ fun <SID>X(group, fg, bg, attr)
 endfun
 " }}}
 
-call <SID>X("Normal",		"cccccc",	"242424",	"none")
+call <SID>X("Normal",		"cccccc",	"000000",	"none")
 call <SID>X("Cursor",		"222222",	"ecee90",	"none")
 call <SID>X("CursorLine",	"",			"32322e",	"none")
 call <SID>X("CursorColumn",	"",			"2d2d2d",	"")
 			"CursorIM
 			"Question
 			"IncSearch
-call <SID>X("Search",		"444444",	"af87d7",	"")
-call <SID>X("MatchParen",	"ecee90",	"857b6f",	"bold")
+call <SID>X("Search",		"ff0000",	"000000",	"")
+call <SID>X("MatchParen",	"ecee90",	"000000",	"bold")
 call <SID>X("SpecialKey",	"6c6c6c",	"2d2d2d",	"none")
 call <SID>X("Visual",		"ecee90",	"597418",	"none")
 call <SID>X("LineNr",		"857b6f",	"121212",	"none")

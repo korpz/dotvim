@@ -21,7 +21,7 @@ if v:version < 700
     echoerr "NERDTree: this plugin requires vim >= 7. DOWNLOAD IT! You'll thank me later!"
     finish
 endif
-let loaded_nerd_tree = 1
+let loaded_nerd_tree = 0
 
 "for line continuation - i.e dont want C in &cpo
 let s:old_cpo = &cpo
@@ -50,7 +50,7 @@ call s:initVariable("g:NERDChristmasTree", 1)
 call s:initVariable("g:NERDTreeAutoCenter", 1)
 call s:initVariable("g:NERDTreeAutoCenterThreshold", 3)
 call s:initVariable("g:NERDTreeCaseSensitiveSort", 0)
-call s:initVariable("g:NERDTreeChDirMode", 0)
+call s:initVariable("g:NERDTreeChDirMode", 1)
 call s:initVariable("g:NERDTreeMinimalUI", 0)
 if !exists("g:NERDTreeIgnore")
     let g:NERDTreeIgnore = ['\~$']
@@ -58,12 +58,12 @@ endif
 call s:initVariable("g:NERDTreeBookmarksFile", expand('$HOME') . '/.NERDTreeBookmarks')
 call s:initVariable("g:NERDTreeHighlightCursorline", 1)
 call s:initVariable("g:NERDTreeHijackNetrw", 1)
-call s:initVariable("g:NERDTreeMouseMode", 1)
+call s:initVariable("g:NERDTreeMouseMode", 0)
 call s:initVariable("g:NERDTreeNotificationThreshold", 100)
 call s:initVariable("g:NERDTreeQuitOnOpen", 0)
-call s:initVariable("g:NERDTreeShowBookmarks", 0)
+call s:initVariable("g:NERDTreeShowBookmarks", 1)
 call s:initVariable("g:NERDTreeShowFiles", 1)
-call s:initVariable("g:NERDTreeShowHidden", 0)
+call s:initVariable("g:NERDTreeShowHidden", 1)
 call s:initVariable("g:NERDTreeShowLineNumbers", 0)
 call s:initVariable("g:NERDTreeSortDirs", 1)
 call s:initVariable("g:NERDTreeDirArrows", 0)
@@ -3629,7 +3629,7 @@ function! s:bindMappings()
     exec "nnoremap <silent> <buffer> ". g:NERDTreeMapJumpLastChild ." :call <SID>jumpToLastChild()<cr>"
     exec "nnoremap <silent> <buffer> ". g:NERDTreeMapJumpRoot ." :call <SID>jumpToRoot()<cr>"
 
-    exec "nnoremap <silent> <buffer> ". g:NERDTreeMapOpenInTab ." :call <SID>openInNewTab(0)<cr>"
+    exec "nnoremap <silent> <buffer> ". g:NERDTreeMapOpenInTab ." :call <SID>openInNewTab(0)<cr>:NERDTree<cr>"
     exec "nnoremap <silent> <buffer> ". g:NERDTreeMapOpenInTabSilent ." :call <SID>openInNewTab(1)<cr>"
 
     exec "nnoremap <silent> <buffer> ". g:NERDTreeMapOpenExpl ." :call <SID>openExplorer()<cr>"
