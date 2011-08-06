@@ -52,7 +52,7 @@ hi Folded          guifg=#465457 guibg=#000000
 hi Function        guifg=#A6E22E
 hi Identifier      guifg=#FD971F
 hi Ignore          guifg=#808080 guibg=bg
-hi IncSearch       guifg=#C4BE89 guibg=#000000
+hi IncSearch       guifg=#C4BE89 guibg=#000000 gui=bold
 
 hi Keyword         guifg=#F92672               gui=bold
 hi Label           guifg=#E6DB74               gui=none
@@ -74,7 +74,7 @@ hi PreCondit       guifg=#A6E22E               gui=bold
 hi PreProc         guifg=#A6E22E
 hi Question        guifg=#66D9EF
 hi Repeat          guifg=#F92672               gui=bold
-hi Search          guifg=#FFFFFF guibg=#455354
+hi Search          guifg=#FFFFFF guibg=#000000
 " marks column
 hi SignColumn      guifg=#A6E22E guibg=#232526
 hi SpecialChar     guifg=#F92672               gui=bold
@@ -152,7 +152,7 @@ if &t_Co > 255
    hi Function        ctermfg=118
    hi Identifier      ctermfg=208
    hi Ignore          ctermfg=244 ctermbg=232
-   hi IncSearch       ctermfg=193 ctermbg=16
+   hi IncSearch       ctermfg=233 ctermbg=196
 
    hi Keyword         ctermfg=161               cterm=bold
    hi Label           ctermfg=229               cterm=none
@@ -174,7 +174,7 @@ if &t_Co > 255
    hi PreProc         ctermfg=118
    hi Question        ctermfg=81
    hi Repeat          ctermfg=161               cterm=bold
-   hi Search          ctermfg=253 ctermbg=66
+   hi Search          ctermfg=196 ctermbg=233    cterm=bold
 
    " marks column
    hi SignColumn      ctermfg=118 ctermbg=235
