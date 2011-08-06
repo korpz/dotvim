@@ -133,7 +133,7 @@ hi PreCondit       guifg=#dfaf8f gui=bold
 hi PreProc         guifg=#ffcfaf gui=bold
 hi Question        guifg=#ffffff gui=bold
 hi Repeat          guifg=#ffd7a7 gui=bold
-hi Search          guifg=#ffffe0 guibg=#284f28
+hi Search          guifg=#ffffe0 guibg=#000000
 hi SpecialChar     guifg=#dca3a3 gui=bold
 hi SpecialComment  guifg=#82a282 gui=bold
 hi Special         guifg=#cfbfaf
@@ -230,7 +230,7 @@ if &t_Co > 255
     hi PMenuSel   ctermfg=223 ctermbg=235
 
     if exists("g:zenburn_high_Contrast")
-        hi Normal ctermfg=188 ctermbg=234
+        hi Normal ctermfg=188 ctermbg=300
         hi NonText         ctermfg=238
 
         if exists("g:zenburn_color_also_Ignore")
@@ -284,22 +284,22 @@ endif
 
 if exists("g:zenburn_high_Contrast")
     " use new darker background
-    hi Normal          guifg=#dcdccc guibg=#1f1f1f
+    hi Normal          guifg=#dcdccc guibg=#000000
     hi CursorLine      guibg=#121212 gui=bold
     hi Pmenu           guibg=#242424 guifg=#ccccbc
     hi PMenuSel        guibg=#353a37 guifg=#ccdc90 gui=bold
     hi PmenuSbar       guibg=#2e3330 guifg=#000000
     hi PMenuThumb      guibg=#a0afa0 guifg=#040404
-    hi MatchParen      guifg=#f0f0c0 guibg=#383838 gui=bold
-    hi SignColumn      guifg=#9fafaf guibg=#181818 gui=bold
-    hi TabLineFill     guifg=#cfcfaf guibg=#181818 gui=bold
-    hi TabLineSel      guifg=#efefef guibg=#1c1c1b gui=bold
-    hi TabLine         guifg=#b6bf98 guibg=#181818 gui=bold
-    hi CursorColumn    guifg=#dcdccc guibg=#2b2b2b
+    hi MatchParen      guifg=#f0f0c0 guibg=#000000 gui=bold
+    hi SignColumn      guifg=#9fafaf guibg=#000000 gui=bold
+    hi TabLineFill     guifg=#cfcfaf guibg=#000000 gui=bold
+    hi TabLineSel      guifg=#efefef guibg=#000000 gui=bold
+    hi TabLine         guifg=#b6bf98 guibg=#000000 gui=bold
+    hi CursorColumn    guifg=#dcdccc guibg=#000000
     hi NonText         guifg=#404040 gui=bold
 else
     " Original, lighter background
-    hi Normal          guifg=#dcdccc guibg=#3f3f3f
+    hi Normal          guifg=#dcdccc guibg=#000000
     hi CursorLine      guibg=#434443
     hi Pmenu           guibg=#2c2e2e guifg=#9f9f9f
     hi PMenuSel        guibg=#242424 guifg=#d0d0a0 gui=bold
