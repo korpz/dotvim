@@ -81,7 +81,7 @@ nmap ,bl :BlogList<CR>
 "nerd tree toggle
 nmap ,c<SPACE> :NERDComToggleComment<CR>
 
-"die function
+"php die function
 vmap ,d yo<ESC>idie(<ESC>hpA;<ESC>
 nmap ,d yo<ESC>idie(<ESC>hpA;<ESC>
 
@@ -186,20 +186,18 @@ let g:user_zen_leader_key= '<c-a>'
 "hi CursorColumn cterm=NONE ctermbg=darkgreen ctermfg=white guibg=darkred guifg=white
 nnoremap ,z :set cursorline! cursorcolumn!<CR>
 
-function! WordFrequency() range
-  let all = split(join(getline(a:firstline, a:lastline)), '\A\+')
-  let frequencies = {}
-  for word in all
-    let frequencies[word] = get(frequencies, word, 0) + 1
-  endfor
-  new
-  setlocal buftype=nofile bufhidden=hide noswapfile tabstop=20
-  for [key,value] in items(frequencies)
-    call append('$', key."\t".value)
-  endfor
-  sort i
-endfunction
-command! -range=% WordFrequency <line1>,<line2>call WordFrequency()
-
 "Abbreviations
 iab pnd £
+
+"Dbext plugin profile FOR dbext plugin
+let g:dbext_default_profile_mysql_local= 'type=MYSQL:user=kp:passwd=corpse:driver=mysql'
+
+"Dbext plugin show 15 lines db output
+let g:dbext_default_buffer_lines = 15
+
+"Dbext plugin display results vertical
+let  g:dbext_default_DBI_orientation = 'vertical'
+
+let g:window_use_horiz = 0
+let g:window_use_bottom = 0
+let g:window_use_right = 1
