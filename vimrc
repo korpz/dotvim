@@ -179,7 +179,7 @@ map <C-l> <C-w>l
 
 "php cheat for tags
 autocmd FileType php let b:surround_45 = "<?php \r ?>"
-let g:user_zen_leader_key= '<c-a>'
+let g:user_zen_leader_key = '<c-y>'
 
 "show cursor lines"
 "hi CursorLine   cterm=NONE ctermbg=darkgreen ctermfg=white guibg=darkred guifg=white
