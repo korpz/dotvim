@@ -124,7 +124,7 @@ noremap ,, ;
 nmap ,ss :set spell!<cr>
 
 "select a variable
-nmap ,vs v2wh
+nmap ,v v$
 
 "save
 nmap ,w :w!<CR>
