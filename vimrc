@@ -42,6 +42,14 @@ let g:molokai_original=1
 colorscheme molokai
 syntax on
 
+set statusline=%F%m%r%h%w
+set statusline+=\ %#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+set statusline+=%=(%{&ff}/%Y)
+set statusline+=\ (line\ %l\/%L,\ col\ %c)
+
+
 "Bubble single lines
 nmap <C-UP> ddkP
 nmap <C-Down> ddp
@@ -57,7 +65,7 @@ vmap <C-Up> xkPz[V`]
 vmap <C-Down> xp`[V`]
 
 "escape to normal mode
-inoremap jj <ESC>
+inoremap ii <ESC>
 
 "source vim file when saving
 if has("autocmd")
