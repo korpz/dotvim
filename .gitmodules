@@ -25,3 +25,6 @@
 [submodule "YankRing.vim"]
 	path = YankRing.vim
 	url = https://github.com/vim-scripts/YankRing.vim.git
+[submodule "bundle/yankring"]
+	path = bundle/yankring
+	url = https://github.com/chrismetcalf/vim-yankring.git
