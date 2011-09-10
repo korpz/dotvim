@@ -28,3 +28,6 @@
 [submodule "bundle/yankring"]
 	path = bundle/yankring
 	url = https://github.com/chrismetcalf/vim-yankring.git
+[submodule "matchit"]
+	path = matchit
+	url = https://github.com/edsono/vim-matchit.git
