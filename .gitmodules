@@ -22,8 +22,8 @@
 [submodule "bundle/l9"]
 	path = bundle/l9
 	url = https://github.com/vim-scripts/L9.git
-[submodule "YankRing.vim"]
-	path = YankRing.vim
+[submodule "yankring"]
+	path = bundle/yankring
 	url = https://github.com/vim-scripts/YankRing.vim.git
 [submodule "bundle/yankring"]
 	path = bundle/yankring
