@@ -31,3 +31,6 @@
 [submodule "matchit"]
 	path = matchit
 	url = https://github.com/edsono/vim-matchit.git
+[submodule "bundle/matchit"]
+	path = bundle/matchit
+	url = https://github.com/edsono/vim-matchit.git
