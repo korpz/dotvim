@@ -70,6 +70,11 @@ inoremap ii <ESC>
 "Make D act normally
 noremap D d;
 
+"change behaviour of k to *
+noremap K *
+
+"let g:ctrlp_map = '<c-k>'
+
 "source vim file when saving
 if has("autocmd")
  autocmd bufwritepost .vimrc source $MYVIMRC
@@ -77,6 +82,8 @@ endif
 
 "Source config for wordpress
 source ~/my_vimpress.vimrc
+
+cmap w!! w !sudo tee % >/dev/null
 
 "FATBEEHIVE bk_debug function
 vmap ,bs yo<ESC>ibk_debug("<ESC>hhpA;<ESC>
@@ -199,6 +206,7 @@ nnoremap ,z :set cursorline! cursorcolumn!<CR>
 
 "Abbreviations
 iab pnd £
+iab ec echo "";
 
 "Dbext plugin profile FOR dbext plugin
 let g:dbext_default_profile_mysql_local= 'type=MYSQL:user=kp:passwd=corpse:driver=mysql'
