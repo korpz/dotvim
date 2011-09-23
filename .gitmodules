@@ -27,7 +27,7 @@
 	url = https://github.com/vim-scripts/YankRing.vim.git
 [submodule "bundle/yankring"]
 	path = bundle/yankring
-	url = https://github.com/chrismetcalf/vim-yankring.git
+	url = https://github.com/vim-scripts/YankRing.vim.git
 [submodule "bundle/matchit"]
 	path = bundle/matchit
 	url = https://github.com/edsono/vim-matchit.git

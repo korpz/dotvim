@@ -44,7 +44,7 @@ syntax on
 
 set statusline=%F%m%r%h%w
 set statusline+=\ %#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 set statusline+=%=(%{&ff}/%Y)
 set statusline+=\ (line\ %l\/%L,\ col\ %c)
@@ -61,11 +61,14 @@ nnoremap <C-P> :call PhpDocSingle()<CR>
 vnoremap <C-P> :call PhpDocRange()<CR> 
 
 "Bubble multiple lines - cool
-vmap <C-Up> xkPz[V`]
-vmap <C-Down> xp`[V`]
+vmap <C-k> xkPz[V`]
+vmap <C-j> xp`[V`]
 
 "escape to normal mode
 inoremap ii <ESC>
+
+"Make D act normally
+noremap D d;
 
 "source vim file when saving
 if has("autocmd")
