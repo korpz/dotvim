@@ -34,3 +34,6 @@
 [submodule "bundle/ynkring"]
 	path = bundle/ynkring
 	url = https://github.com/vim-scripts/YankRing.vim.git
+[submodule "bundle/cntrlp"]
+	path = bundle/cntrlp
+	url = https://github.com/kien/ctrlp.vim.git
